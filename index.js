@@ -1,5 +1,7 @@
 const express = require("express")
 var cors = require('cors')
+require('dotenv').config()
+
 const app = express();
 const router = require("./routes/Routes")
 app.use(express.json())
@@ -8,9 +10,9 @@ app.use("/room",router)
 
 
 
+const port =process.config.PORT
 
 
-
-app.listen(3000,()=>{
-    console.log('this server runs on port 3000 !!!!')
+app.listen(port,()=>{
+    console.log(`this server runs on port${port}  !!!!`)
 })
