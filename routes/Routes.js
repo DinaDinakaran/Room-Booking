@@ -20,7 +20,6 @@ router.post("/",(req,res)=>{
 router.post("/booked",(req,res)=>{
     room.push(req.body)
     res.status(201).send("room is booked..😍")
-    console.log(room)
 })
 
 router.get("/list",(req,res)=>{
