@@ -10,9 +10,9 @@ app.use("/room",router)
 
 
 
-const port =process.config.PORT
+const port =process.env.PORT
 
 
 app.listen(port,()=>{
-    console.log(`this server runs on port${port}  !!!!`)
+    console.log(`this server runs on port ${port}  !!!!`)
 })
